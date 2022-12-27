@@ -27,14 +27,15 @@
 `docker-compose -f docker-compose.yml -f docker-compose.dev.yml down` - stop running containers with `yml` file
 
 `docker exec -it docker-nodejs-mongo-demo-redis-1 bash` - start a shell inside a running container
+`docker exec -it docker-nodejs-mongo-mongo-1 mongosh -u root -p example` - connect to mongodb
 
 
 # AWS
 
 ## SSH
 
-`sudo chmod 600 "key".pem` - activte key on local machine
-`ssh -i "key".pem ubuntu@ec2-"number".compute-1.amazonaws.com` - connect to cloud machine
+`sudo chmod 600 <"key">.pem` - activte key on local machine
+`ssh -i "key".pem ubuntu@ec2-<"number">.compute-1.amazonaws.com` - connect to cloud machine
 
 ## Install Docker in cloud
 
